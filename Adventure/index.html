@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Advanture</title>
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar">
+		<h1 class="logo">ADVANTURE</h1>
+		<ul class="nav-links">
+			<li class="active"><a href="#"></a>Home</li>
+			<li><a href="#"></a>Tours</li>
+			<li><a href="#"></a>Explore</li>
+			<li><a href="#"></a>About</li>
+			<li class="ctn"><a href="#"></a>Contact</li>
+		</ul>
+		<img src="./menu-btn.png" class="menu-btn" width="40px">
+	</nav>
+	<header>
+		<div class="header-content">
+			<h2>Explore The Colorful World</h2>
+			<div class="line"></div>
+			<h1>A WONDERFUL GIFT</h1>
+			<a href="#" class="ctn">Learn More</a>
+		</div>
+	</header>
+	<!-- Events -->
+	<section class="events">
+		<div class="title">
+		<h1>Upcoming Events</h1>	
+	    <div class="line"></div>	
+	</div>
+	<div class="row">
+		<div class="col">
+			<img src="./img1.png" alt="image">
+			<h4>Everest Camp Trek</h4>
+			<p>Lorem,ipsum dolor sit amet consectetur adipisicing elite,Volupatatibus</p>
+			<a href="#" class="ctn">Learn More</a>
+		</div>
+		<div class="col">
+			<img src="./img2.png" alt="image">
+			<h4>Walking Holidaysk</h4>
+			<p>Lorem,ipsum dolor sit amet consectetur adipisicing elite,Volupatatibus</p>
+			<a href="#" class="ctn">Learn More</a> 
+		</div>
+	</div>
+	</section>
+	
+	<section class="explore">
+		<div class="explore-content">
+			<h1>EXPLORE THE WORLD</h1>
+			<div class="line"></div>
+		<p>Lorem,ipsum dolor sit amet consectetur adipisicing elite,Volupatatibus</p>
+		<a href="#" class="ctn">Learn More</a>
+		</div>
+	</section>
+
+    <section class="tours">
+		<div class="row">
+			<div class="col content-col">
+			<h1>UPCOMING TOURS & DESTINATION</h1>
+			<p>Lorem,ipsum dolor sit amet consectetur adipisicing elite,Volupatatibus</p>	
+			<a href="#" class="ctn">Learn More</a>
+			</div>
+			<div class="col image-col">
+				<div class="image-gallery">
+					<img src="./img3.png" alt="">
+					<img src="./img4.png" alt="">
+					<img src="./img5.png" alt="">
+					<img src="./img6.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer">
+		<p>123 Fifth Avenue,Ny 10169,New York,USA | phone:9966769943  | Email:venkateshsakiri377@gmail.com</p>
+		<p>Copyright &#169;	2021 Outdoor Adventure</p>
+	</section>
+
+
+
+
+    <script>
+		const menuBtn = document.querySelector('.menu-btn')
+		const navlinks = document.querySelector('.nav-links')
+
+		menuBtn.addEventListener('click',()=>{
+			navlinks.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>

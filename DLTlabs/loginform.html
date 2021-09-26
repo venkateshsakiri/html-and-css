@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLTLabs Login form</title>
+    <script src="https://kit.fontawesome.com/aaf71d4151.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            position: relative;
+            background-color: #fcf8f8;;
+            width: 100%;
+            height: 100vh;
+        }
+        .icon-input-div span {
+            position:absolute;
+            left:90%;
+            top: 45%;
+        }
+        .icon-input-div{
+            position: relative;
+        }
+       
+        .main-container{
+            width: 90%;
+            top: 10%;
+            left:5%;
+            height: 80%;
+            position: absolute;
+            background-color: #fff;
+        }
+        .content .logo img{
+            width: 80px;
+            height: 40px;
+        }
+        .main-container .content{
+            margin: 30px 20px;
+        }
+        .content .heading h2{
+            font-size: 16px;
+            font-weight: 700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            letter-spacing: 1px;
+            margin-top: 20px;
+        }
+        .content .heading p{
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            height: 20px;
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+        .content .form input{
+            width: 100%;
+            height: 45px;
+            border-radius: 6px;
+            border: none;
+            border: 1px solid #727272;
+            position: relative;
+
+        }
+        #checkbox{
+            width: 16px;
+            height: 16px;
+        }
+        .content .form input[placeholder]{
+            padding: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+
+        }
+        a{
+            text-decoration: none;
+            color: #32BBAF;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            line-height: 16px;
+            font-size: 14px;
+            font-style: normal;
+        }
+        .form label{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        #lang{
+            font-size: 12px;
+            font-weight: 400;
+            font-style: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 16px;
+        }
+        #sign{
+            background-color: #32BBAF;
+            color: #ffffff;
+        }
+        #select{
+            border: none;
+            
+        }
+        .form p{
+            color: #979ea3;
+            font-size: 12px;
+            line-height: 16px;
+            margin-top: 10px;
+        }
+        a{
+            float: right;
+           
+        }
+        i{
+            position: absolute;
+            top: 26%;
+            left: 82%;
+        }
+
+        @media(min-device-width: 320px) and (max-device-width:549x){
+            h2#page-info{
+                font-size: 24px !important;
+                font-weight: 700 !important;
+            }
+            .content .heading p{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .main-container{
+            width: 90%;
+            top: 10%;
+            left:5%;
+            height: 80%;
+            position: absolute;
+        }
+        .content .form input{
+            width: 100%;
+        }
+      
+        a{
+            margin-left: 20%;
+        }
+      
+
+        }  
+        @media(min-width: 550px) and (max-width:767px){
+            .main-container .content{
+            margin: 30px 40px;
+        }
+
+             .main-container{
+            width: 70%;
+            top: 10%;
+            left:15%;
+            height: 80%;
+        }
+        .content .form input{
+            width: 100%;
+        }
+      
+        a{
+            margin-left: 20%;
+        }
+        h2#page-info{
+                font-size: 32px !important;
+                font-weight: 400 !important;
+            }
+            p#page-detai{
+            font-weight: 400;
+        }
+        
+    }
+    @media(min-width:768px)and (max-width:1024px){
+        h2#page-info{
+                font-size: 32px !important;
+                font-weight: 400 !important;
+            }
+            p#page-detai{
+            font-weight: 400;
+        }
+        .main-container{
+            width: 50%;
+            top: 10%;
+            left:25%;
+            height: 80%;
+        }
+        .content .form input{
+            width: 100%;
+        }
+      
+        a{
+            margin-left: 20%;
+        }
+        
+        .main-container .content{
+            margin: 30px 40px;
+        }
+    } 
+    @media(min-width:1025px){
+        .main-container .content{
+            margin: 30px 40px;
+        }
+        p#page-detai{
+            font-weight: 400;
+        }
+        .main-container{
+            width: 40%;
+            top: 10%;
+            left:30%;
+            height: 80%;
+        }
+        .content .form input{
+            width: 100%;
+        }
+      
+        a{
+            margin-left: 20%;
+        }
+        
+      
+    }
+        
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="content">
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+            <div class="heading">
+                <h2 id="page-info" >Welcome!</h2>
+                <p id="page-detai">Please sign in your DL Assect Track account</p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Email"><br><br>
+                <div class="icon-input-div"> 
+                    <input type="password" placeholder="Password"> 
+                <span><i class="far fa-eye"></i></span>
+                </div>
+                
+                <br><br>
+                <div>
+                <input type="checkbox" id="checkbox">
+                <label for="name">Remember Me</label>
+                <a href="#">Forgot Password?</a><br><br>
+                </div>
+                <input type="button" value="Sign in" id="sign"><br><br>
+                <label for="lang" id="lang">English (United States)</label>
+                <select name="lang" id="select">
+                    <option value="">.</option>
+                    <option value="">.</option>
+                    <option value="">.</option>
+                    <option value="">.</option>
+                </select><br><br>
+                <p>&#169;2018-2021 DLT Global Inc.</p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
