@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLTLabs Set Password</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="main-container" id="set-main-container">
+        <div class="content">
+            <div class="logo">
+                <img src="DLT-logo.svg" alt="DLT Labs">
+            </div>
+            <div class="heading">
+                <h2 id="page-info">Set Password</h2>
+                <p id="page-detai">Enter new password</p>
+                <p class="mobile">Enter new password</p>
+            </div>
+            <div class="form">
+                <div class="icon-input-div">
+                    <input type="password" placeholder="New Password" id="PasswordBx2"
+                        onKeyUp="edValueKeyPress(this.id,'set-new-password')">
+                    <span id="set-new-password">New Password</span>
+                    <span id="eye-open-2" onclick="showPassword('PasswordBx2','eye-open-2','eye-close-2')"><img
+                            src="visibility_on.svg" alt="eye-open"></span>
+                    <span class="eye-close" id="eye-close-2"
+                        onclick="showPassword('PasswordBx2','eye-open-2','eye-close-2')"><img src="visibility_off.svg"
+                            alt="eye-close"></span>
+                </div>
+
+                <div class="icon-input-div">
+                    <input type="password" placeholder="Confirm Password" id="PasswordBx3"
+                        onKeyUp="edValueKeyPress(this.id,'place-password')">
+                    <span id="place-password">Confirm Password</span>
+                    <span id="eye-open-3" onclick="showPassword('PasswordBx3','eye-open-3','eye-close-3')"><img
+                            src="visibility_on.svg" alt="eye-open"></span>
+                    <span class="eye-close" id="eye-close-3"
+                        onclick="showPassword('PasswordBx3','eye-open-3','eye-close-3')"><img src="visibility_off.svg"
+                            alt="eye-close">
+                    </span>
+                </div>
+
+
+                <input type="button" value="Set Password" class="submit">
+                <div class="dropdown">
+                    <select name="lang" id="select">
+                        <option value="">English (United States)</option>
+                        <option value="">India (United States)</option>
+                        <option value="">Japanies</option>
+                        <option value="">English (UK)</option>
+                    </select>
+                </div>
+                <p>©2018 – 2021 DLT Global Inc.</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
